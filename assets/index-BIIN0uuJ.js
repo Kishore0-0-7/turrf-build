@@ -23336,7 +23336,7 @@ const oV = "/assets/herosectionbgg-D1ZIm1bw.jpg",
       ],
     });
   },
-  QM = "http://127.0.0.1:5125/api",
+  QM = "http://artechnology18.duckdns.org:5125/api",
   cV = async (e) => {
     try {
       const t = {
