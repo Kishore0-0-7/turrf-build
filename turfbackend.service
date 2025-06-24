@@ -1,0 +1,17 @@
+[Unit]
+Description=ASP.NET Core Turf Management Backend
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/Downloads/backend/publish
+ExecStart=/usr/bin/dotnet /home/ubuntu/Downloads/backend/publish/turfmanagement.dll
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=turfbackend
+User=ubuntu
+Environment=ASPNETCORE_URLS=http://0.0.0.0:5125
+Environment=DOTNET_ENVIRONMENT=Production
+
+[Install]
+WantedBy=multi-user.target
